@@ -1,6 +1,8 @@
 spring:
   application:
     name: ai-code-helper
+  profiles:
+    active: local
 server:
   port: 8011
   servlet:
@@ -12,16 +14,16 @@ langchain4j:
     dashscope:
       chat-model:
         model-name: qwen-plus
-        api-key: sk-586ee1fda29d464db2c8fb6560a55f32
+        api-key: ${DASHSCOPE_API_KEY:your-api-key-here}
       embedding-model:
         model-name: text-embedding-v4
-        api-key: sk-586ee1fda29d464db2c8fb6560a55f32
+        api-key: ${DASHSCOPE_API_KEY:your-api-key-here}
       streaming-chat-model:
         model-name: qwen-plus
-        api-key: sk-586ee1fda29d464db2c8fb6560a55f32
+        api-key: ${DASHSCOPE_API_KEY:your-api-key-here}
 bigmodel:
-  api-key: a1eeb55cfff34812b2d0f36ddce8d28a.5uPuTbWtq5iyF3xd
+  api-key: ${BIGMODEL_API_KEY:your-api-key-here}
 ai:
   rag:
     docs:
-      path: F:\project\mjh\IDEA\ai-code-helper\src\main\resources\docs
+      path: ${AI_RAG_DOCS_PATH:src/main/resources/docs}
