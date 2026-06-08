@@ -11,8 +11,7 @@
 
 AI 编程小助手是一个基于 LangChain4j + 通义千问大模型的全栈智能编程助手，帮助用户解答编程学习和求职面试相关问题。支持流式对话、RAG 知识库检索增强、MCP 工具调用和面试题搜索等能力。
 
-<!-- 预览图片 - 请替换为实际截图 -->
-<!-- ![Preview](preview.png) -->
+![ai-code-helper](images/README_images/ai-code-helper.png)
 
 ## 目录
 
